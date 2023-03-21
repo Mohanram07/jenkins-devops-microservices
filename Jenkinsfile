@@ -47,7 +47,7 @@ pipeline {
 			steps {
 				//"docker build -t mohanaalavai/devops:$env.BUILD_TAG"
 				script {
-					docker.build("mohanaalavai/devops:${env.BUILD_TAG}")
+					docker.build("mohanaalavai/devops:jenkins-jenkins-devops-microservices-pipeline-22")
 				}
 
 			}
