@@ -45,9 +45,9 @@ pipeline {
 
 		stage('Build Docker Image') {
 			steps {
-				//"docker build -t mohanaalavai/devops/general:$env.BUILD_TAG"
+				//"docker build -t mohanaalavai/devops:$env.BUILD_TAG"
 				script {
-					docker.build("mohanaalavai/devops/general:${env.BUILD_TAG}")
+					docker.build("mohanaalavai/devops:${env.BUILD_TAG}")
 				}
 
 			}
